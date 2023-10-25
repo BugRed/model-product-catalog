@@ -1,7 +1,14 @@
 import React from "react";
 
+
 const App = () => {
-    return <h1>Hello Trouxas!</h1>
+
+    return (
+    <div className="container mt-5">
+        <h1>Hello</h1>
+    </div>
+    )
 }
+
 
 export default App;
