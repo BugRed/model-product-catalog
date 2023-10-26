@@ -10,7 +10,7 @@ const Home = () => (
         <div className="row home-content card-base border-radius-20">
             <div className="col-6 home-text">
                 <h1 className='text-title'>
-                    Discover the <br /> best  product catalog
+                    Discover the best <br /> product catalog
                 </h1>
                 <p className='text-subtitle'>
                     We will help you find
