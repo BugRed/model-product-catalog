@@ -7,7 +7,7 @@ import Buttonicon from '../../core/components/Buttonicon';
 
 const Home = () => (
     <div className="home-container">
-        <div className="row home-content">
+        <div className="row home-content card-base border-radius-20">
             <div className="col-6 home-text">
                 <h1 className='text-title'>
                     Discover the <br /> best  product catalog
@@ -17,7 +17,7 @@ const Home = () => (
                     the best <br /> products available on the market.
                 </p>
 
-                <Link to="/catalog" id='text-icon'>
+                <Link to="/products" id='text-icon'>
                 <Buttonicon text='Start your search' />
                 </Link>
                 

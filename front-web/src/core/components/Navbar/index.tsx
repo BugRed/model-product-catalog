@@ -17,7 +17,7 @@ const Navbar = () => (
                 </NavLink>
             </li>
             <li>
-                <NavLink end to="/catalog" className={({ isActive }) => isActive ? 'active' : 'deactivate'}>
+                <NavLink end to="/products" className={({ isActive }) => isActive ? 'active' : 'deactivate'}>
                     CATÁLOGO
                 </NavLink>
             </li>
