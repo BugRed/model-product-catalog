@@ -23,12 +23,12 @@ const ProductDetails = () => {
                 <div className="row">
                     <div className="col-6 pr-5">
                         <div className="product-details-card text-center">
-                            <ProductImage  className="product-details-image"/>
+                            <img src="" alt="" />
                         </div>
                         <h1 className="product-details-name">
                             Computador Desktop - Intel Core i7
                         </h1>
-                        <ProductPrice price="3.779,00"/>
+                        <ProductPrice price={3779}/>
                     </div>
                     <div className="col-6 product-details-card">
                         <h1 className="product-description-title">

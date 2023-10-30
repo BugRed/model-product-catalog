@@ -1,20 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './style.scss'
 import ProductCard from "./components/ProductCard";
 import { Link } from 'react-router-dom'
 import { makeRequest } from "../../core/utils/request";
+import { ProductResponse } from "../../core/types/Products";
 
 const Catalog = () => {
+
+    const [productsResponse, setProductsReponse] = useState<ProductResponse>();
+
+    console.log(productsResponse?.content)
 
     useEffect(() => {
         const params ={
             page:0,
-            linesPerPage: 5,
+            linesPerPage: 12,
             
         }
 
         makeRequest({ url: '/products', params})
-        .then(response => console.log(response));
+        .then(response => setProductsReponse(response.data));
     } ,[]);
 
     return (
@@ -23,15 +28,12 @@ const Catalog = () => {
             Product catalog
         </h1>
     <div className="catalog-products">
-        <Link to="/products/1" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/2" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/3" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/4" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/5" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/6" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/7" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/8" className="link-product-card"><ProductCard /></Link>
-        <Link to="/products/9" className="link-product-card"><ProductCard /></Link>
+        {productsResponse?.content.map(product =>(
+            <Link to="/products/1" key={product.id} className="link-product-card">
+            <ProductCard product={product} />
+            </Link>
+        ))}
+        
         
         
     </div>
