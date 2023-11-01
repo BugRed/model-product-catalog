@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
+import './style.scss';
+import { Navigate } from 'react-router-dom';
 
 const Admin = () => (
-    <div>
-        <h1>Admin</h1>
-    </div>
+    <Navigate to="/admin/products" />
 );
 
-export default Admin;
+export default Admin; 

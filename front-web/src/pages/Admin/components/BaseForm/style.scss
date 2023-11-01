@@ -1,0 +1,43 @@
+.admin-base-form{
+    padding: 70px 45px 50px 45px;
+    display: flex;
+    margin-right: 100px;
+    margin-left: 370px;
+    margin-top: 50px;
+    border-radius: 20px;
+    
+}
+
+.base-form-title{
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.15em;
+    color: #263238;
+    position: relative;
+    bottom: 15px
+    
+}
+
+.btn-outline-danger{
+    color: red;
+    margin-right: 1em;
+
+    &:hover{
+        background-color: red;
+        color: #fff;
+    }
+}
+
+.base-form-actions{
+    position: relative;
+    margin-top: 750px;
+    left: -150px;
+
+}
+
+.children-base-form{
+    position: relative;  
+    top: 35px;
+    left: -110px
+}
+

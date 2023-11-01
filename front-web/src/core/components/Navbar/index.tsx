@@ -12,17 +12,17 @@ const Navbar = () => (
         <div className="col-6 offset-2">
             <ul className="main-menu">
             <li>
-                <NavLink end to="/" className={({ isActive }) => isActive ? 'active' : 'deactivate'}>
+                <NavLink end to="/">
                     HOME
                 </NavLink>
             </li>
             <li>
-                <NavLink end to="/products" className={({ isActive }) => isActive ? 'active' : 'deactivate'}>
+                <NavLink to="/products" >
                     CATÁLOGO
                 </NavLink>
             </li>
             <li>
-                <NavLink end to="/admin" className={({ isActive }) => isActive ? 'active' : 'deactivate'}>
+                <NavLink to="/admin" >
                     ADMIN
                 </NavLink>
             </li>

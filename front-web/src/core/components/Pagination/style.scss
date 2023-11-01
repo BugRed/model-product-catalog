@@ -30,14 +30,31 @@
 .pagination-previous{
     transform: rotate(-180deg);
     margin-right: 25px;
-    color: #e1e1e1
+    
 }
 
 .pagination-next{
     margin-left: 15px;
+    
+}
+
+.page-active{
+    cursor: pointer;
     color: #407BFF;
 }
 
-.arrow-icon{
-    cursor: pointer;
+.page-inactive{
+    color: #e1e1e1
 }
+
+
+.arrow-icon{
+    &.page-inactive{
+        pointer-events: none;
+    }
+    
+}
+
+
+
+
